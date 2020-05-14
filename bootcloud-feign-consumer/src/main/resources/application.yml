@@ -1,0 +1,21 @@
+server:
+  port: 8088
+feign:
+ compression:
+  request:
+    enabled: true
+    mime-types: # 可以被压缩的类型
+     - text/xml
+     - application/xml
+     - application/json
+    min-request-size: 2048 # 超过2048的字节进行压缩
+
+logging:
+  level:
+    cn.boot.cloud.service: DEBUG
+
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+        defaultZone: http://admin:admin@eureka1:8000/eureka,http://admin:admin@eureka2:8001/eureka,http://admin:admin@eureka3:8002/eureka

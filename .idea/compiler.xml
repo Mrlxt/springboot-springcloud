@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bootcloud-api" />
+        <module name="bootcloud-eureka" />
+        <module name="bootcloud-eureka1" />
+        <module name="bootcloud-eureka2" />
+        <module name="bootcloud-feign-consumer" />
+        <module name="bootcloud-feign-service" />
+        <module name="bootcloud-product" />
+        <module name="bootcloud-security" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bootcloud-eureka (1)" target="1.8" />
+      <module name="bootcloud-eureka (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
